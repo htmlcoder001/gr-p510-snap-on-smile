@@ -83,7 +83,37 @@
             font-style: normal
         }
     </style>
+  
     <style>
+      .blur1 {
+        margin: 0 auto;
+        font-size: 0;
+        line-height: 0;
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+      }
+      .blur1::before {
+        content: "18+";
+        color: #fff;
+        font-weight: bold;
+        font-size: 100px;
+        position: absolute;
+        top: 45%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 1;
+        text-shadow: 0 0 10px #000;
+        font-family: sans-serif!important;
+      }
+      .blur {
+        filter: blur(.7);
+        -webkit-filter: blur(10px);
+      }
+      
         .webt-header {
             box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
           margin-bottom: 32px;
@@ -328,10 +358,11 @@
                             <p>Τα δόντια είναι το πρώτο πράγμα που τραβάει την προσοχή. Με άσχημα δόντια, δεν θα βρείτε μια κανονική δουλειά και δεν θα γνωρίσετε έναν άντρα. Και αν τα δόντια είναι λευκά, ομοιόμορφα, τότε φαίνεσαι 20 χρόνια νεότερος, το ξέρω από τον εαυτό μου.</p>
                             <p>Οπότε είχα πρόβλημα με τα δόντια μου.</p>
                             <h2>Δείτε τώρα τι ομορφιά! Λοιπόν, πώς σας φαίνεται; Σας αρέσει; Μου αρέσει πολύ και το πιο σημαντικό είναι ότι ξόδεψα λίγα χρήματα για αυτή την ομορφιά!</h2>
-                          <picture>
-                            <source srcset="images/1.jpg" type="image/jpg">
-                            <img alt="img" loading="lazy" src="images/1.jpg" data-key="2">
-                          </picture>
+  
+                          <div class="blur1">
+                            <img alt="img" loading="lazy" src="images/1.jpg" data-key="2" class="blur">
+                          </div>
+                          
                           <div class="tgme_widget_message_text js-message_text">
                             <center>
                               <strong>Πριν από τους καπλαμάδες και με τους καπλαμάδες Snap-On Smile.</strong>
@@ -349,31 +380,28 @@
                             <p>Στενοχωρήθηκα, για να είμαι ειλικρινής, όταν άκουσα ένα τέτοιο ποσό. Ο γιος μου ήρθε σε μένα το βράδυ, ξέσπασα σε κλάματα, λέω, δεν θα πάω στο γάμο, δεν θα σε ατιμάσω μπροστά στους συγγενείς της νύφης με το άσχημο στόμα μου. Φυσικά, με καθησύχασε, αλλά στον καθρέφτη φαίνομαι - σαν μια γριά, χωρίς δόντια, μα τον Θεό. Είναι αηδιαστικό να βλέπω τον εαυτό μου σε αυτό το χάλι...</p>
                             <h2>Βρήκα όμως τον τρόπο! Γελοία τιμή για ένα χαμόγελο του Χόλιγουντ!</h2>
                             <p>Καθόμουν στο Facebook το βράδυ και εμφανίστηκε μια διαφήμιση για τους αφαιρούμενους καπλαμάδες. Μου κίνησε το ενδιαφέρον, τι είναι και πώς λειτουργεί. Πήγα στο site, διάβασα τις κριτικές των ανθρώπων, σχεδόν όλες θετικές, κοίταξα τις φωτογραφίες τους πριν και μετά, και συγκλονίστηκα με τέτοια ομορφιά! Εδώ, δείτε μόνοι σας:</p>
-                            <picture>
-                                <source srcset="images/6.jpg" type="image/jpg">
-                                <img alt="img" loading="lazy" src="images/6.jpg"
-                                     style="margin: 0 auto 10px; display: block" data-key="3"></picture>
-									 <br>
-                            <picture>
-                                <source srcset="images/5.jpg" type="image/jpg">
-                                <img alt="img" loading="lazy" src="images/5.jpg" style="margin: 0 auto; display: block"
-                                     data-key="4"></picture>
-									 <br>
-							<picture>
-                                <source srcset="images/3.jpg" type="image/jpg">
-                                <img alt="img" loading="lazy" src="images/3.jpg" style="margin: 0 auto; display: block"
-                                     data-key="4"></picture>		 
-									 <br>
-							<picture>
-                                <source srcset="images/2.jpg" type="image/jpg">
-                                <img alt="img" loading="lazy" src="images/2.jpg" style="margin: 0 auto; display: block"
-                                     data-key="4"></picture>		 
-									 <br>
-							<picture>
-                                <source srcset="images/7.jpg" type="image/jpg">
-                                <img alt="img" loading="lazy" src="images/7.jpg" style="margin: 0 auto; display: block"
-                                     data-key="4"></picture>	
-									<br>									 
+  
+                          <div class="blur1">
+                            <img alt="img" loading="lazy" src="images/6.jpg" data-key="3" class="blur">
+                          </div>
+                          <br/>
+                          <div class="blur1">
+                            <img alt="img" loading="lazy" src="images/5.jpg" data-key="3" class="blur">
+                          </div>
+                          <br/>
+                          <div class="blur1">
+                            <img alt="img" loading="lazy" src="images/3.jpg" data-key="3" class="blur">
+                          </div>
+                          <br/>
+                          <div class="blur1">
+                            <img alt="img" loading="lazy" src="images/2.jpg" data-key="3" class="blur">
+                          </div>
+                          <br/>
+                          <div class="blur1">
+                            <img alt="img" loading="lazy" src="images/7.jpg" data-key="3" class="blur">
+                          </div>
+                          <br/>
+                        		
 									 
 							<h3 style="color: red;text-align: center">
                                 <b>Και όλοι μπορούν να αποκτήσουν ένα τέτοιο χαμόγελο σε μόλις πέντε λεπτά με τη βοήθεια των αφαιρούμενων καπλαμάδων.</b>
@@ -951,6 +979,23 @@
 			});
 		});
 
+</script>
+<script>
+  // toggle blur
+  document.querySelectorAll('.blur1').forEach(el => {
+    el.addEventListener('click', () => {
+      el.classList.toggle('blur1')
+      el.children[0].classList.toggle('blur')
+    })
+  })
+</script>
+<script>
+  $('a[href^="#"]').click(function (){
+    var elementClick = $(this).attr("href");
+    var destination = $(elementClick).offset().top;
+    jQuery("html:not(:animated), body:not(:animated)").animate({scrollTop: destination}, 600);
+    return false;
+  })
 </script>
 
 </body>
