@@ -8,8 +8,7 @@
 
 
     <link rel="stylesheet" type="text/css" href="css/bmmfp.css" media="all">
-    <title>Была беззубой бабкой, а стала молодой красоткой!
-        Голливудская улыбка за копейки - это реально!</title>
+    <title>Ήταν σαν γιαγιά χωρίς δόντια και έγινε σαν νεαρή καλλονή! Χαμόγελο του Χόλιγουντ με μια δεκάρα - είναι αλήθεια!</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <link rel="stylesheet" href="css/roulette.css" type="text/css">
@@ -68,142 +67,246 @@
 </style>
 <div id="hiddenDiv" style="display:none;"></div>
 <div id="page" class="site">
-    <a class="skip-link screen-reader-text scrollto" href="#roulette">Skip to content</a>
-    <header id="masthead" class="site-header fixed" itemscope="">
-        <div class="site-header-inner fixed">
-            <div class="humburger js-humburger">
-                <span></span>
-                <span></span>
-                <span></span>
+    <style>
+        @font-face {
+            font-family: "Limerick Serial";
+            src: url(fonts/limerick_serial-regular-webfont.woff2) format("woff2");
+            font-display: swap;
+            font-weight: 400;
+            font-style: normal
+        }
+        @font-face {
+            font-family: "Limerick Serial";
+            src: url(fonts/limerick_serial-bold-webfont.woff2) format("woff2");
+            font-display: swap;
+            font-weight: 700;
+            font-style: normal
+        }
+    </style>
+    <style>
+        .webt-header {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+          margin-bottom: 32px;
+        }
+        .webt-header__top {
+            width: 100%;
+            height: 80px;
+            position: relative;
+            padding-top: 32px;
+            margin-bottom: 24px;
+        }
+        .webt-top__wrapper {
+            display: flex;
+            justify-content: flex-end;
+            margin: 0 auto;
+            width: 100%;
+            max-width: 1240px;
+            height: 100%;
+            align-items: center;
+            position: relative;
+        }
+        .webt-top__menu {
+            display: none;
+            
+            text-decoration: none;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+        }
+        .webt-top__menu:hover {
+            text-decoration: none;
+            opacity: 0.8;
+        }
+        .webt-top__logo {
+            width: 120px;
+            height: 48px;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+        .webt-logo__img {
+            max-width: 100%;
+            height: 48px;
+        }
+        .webt-top__actions {
+            display: block;
+            height: 33px;
+            width: 330px;
+            background-image: url(images/header-actions.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            -webkit-background-size: contain;
+            background-size: contain;
+        }
+        .webt-header__bottom {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1240px;
+            margin: 0 auto;
+            height: 48px;
+        }
+        .webt-bottom__nav {
+            display: flex;
+            align-items: stretch;
+            justify-content: flex-start;
+            gap: 16px;
+        }
+        .webt-nav__link,
+        .webt-nav__link:focus,
+        .webt-nav__link:active {
+            position: relative;
+            white-space: nowrap;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            
+            color: #000!important;
+            text-transform: uppercase;
+            font-family: "Limerick Serial"!important;
+            font-size: 14px!important;
+            font-weight: 600!important;
+            letter-spacing: 0.127811em;
+            
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+        }
+        .--active:after {
+            content: '';
+            background-color: rgb(31, 31, 31);
+            bottom: 0;
+            height: 4px;
+            position: absolute;
+            width: 100%;
+        }
+        .webt-nav__link:hover {
+            color: #000;
+            text-decoration: none;
+            
+            border-bottom: 1px solid #000000;
+        }
+        
+        
+        .webt-bottom__subscribe,
+        .webt-bottom__subscribe:focus,
+        .webt-bottom__subscribe:active {
+            color: #000!important;
+            text-transform: uppercase;
+            font-family: "Limerick Serial"!important;
+            font-size: 14px!important;
+            font-weight: 600!important;
+            letter-spacing: 0.127811em;
+            text-decoration: none;
+            -webkit-transition: all .3s;
+            -moz-transition: all .3s;
+            -ms-transition: all .3s;
+            -o-transition: all .3s;
+            transition: all .3s;
+            border-bottom: 1px solid transparent;
+        }
+        .webt-bottom__subscribe:hover {
+            color: #000;
+            text-decoration: none;
+            
+            border-bottom: 1px solid #000000;
+        }
+        
+        
+        @media (max-width: 1240px) {
+            .webt-header__top,
+            .webt-header__bottom {
+                padding-left: 12px;
+                padding-right: 12px;
+            }
+        }
+        @media (max-width: 960px) {
+        
+        }
+        @media (max-width: 768px) {
+            .webt-header__bottom {
+                display: none;
+            }
+            .webt-header__top {
+                padding-top: 0;
+                height: 40px;
+                margin-bottom: 0;
+            }
+            .webt-top__logo {
+                height: 32px;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+            .webt-logo__img {
+                height: 32px;
+            }
+            .webt-top__actions {
+                height: 33px;
+                width: 33px;
+                -webkit-background-size: cover;
+                background-size: cover;
+                background-position: left;
+            }
+            .webt-top__menu {
+                display: block;
+            }
+            .webt-top__wrapper {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <svg class="mntl-svg-resource is-hidden" style="display:none;">
+        <defs>
+            <symbol id="icon-logo">
+                <svg viewBox="0 0 80 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M74.1138 19.7927H79.5993C78.9095 28.1443 67.359 28.2109 66.3494 21.5882V25.9005H58.3848V21.5415C57.6902 25.8035 55.2516 26.3913 54.1828 26.3883C53.2862 26.3851 51.0886 25.6482 50.2765 23.4015L50.3544 25.8475C50.3708 27.3661 51.3408 28.3272 52.3712 28.4655V31.997L43.0779 32L43.0773 28.4655C43.8578 28.4438 45.1087 27.6781 45.122 25.9737V19.5737C44.8368 21.1827 43.6448 26.386 37.9291 26.386C32.265 26.386 30.9839 20.8912 30.7411 20.0854C29.6831 26.0724 25.7021 26.4023 23.9539 26.3803C20.8139 26.3402 18.9348 24.18 18.8881 24.1324C16.9992 22.2143 16.6357 19.309 16.7118 16.1764C16.7118 15.5461 16.8734 14.3205 16.9299 13.7187C14.8982 15.9015 13.0149 15.6297 10.7798 15.7126L8.90161 15.7094V19.2882C8.89983 20.7282 9.42872 21.5896 11.0362 21.6012V25.9062H0V21.6914C1.6075 21.6795 2.15751 20.7404 2.15572 19.3004V6.53707C2.15602 6.23247 2.08106 4.2585 0.00654421 4.24303V0H11.9158C14.1602 0 15.7564 0.68387 16.8305 1.52986C18.8173 3.09452 19.2135 5.7836 19.3747 7.77482C22.4092 5.13572 29.5983 4.54674 30.8018 12.4459C32.1011 6.42731 36.5366 5.97159 37.5754 5.96743C39.4396 5.96059 42.6239 7.08708 43.6573 10.1319V6.37793H50.1813V8.79334C50.6617 6.97048 52.2713 5.97962 53.9032 5.9701C55.4768 5.96059 58.6998 7.70819 59.527 14.3613V5.50219C59.5196 4.22488 58.7388 3.56541 57.4611 3.57195L57.457 0.0389678H65.0489V14.3672C65.7411 8.01963 69.283 5.98944 72.2647 5.98914C75.2923 5.98855 77.4385 7.67725 78.5383 9.83684C79.9465 12.6003 79.8459 15.5214 79.7611 17.4138L70.5237 17.4162C70.491 17.7788 70.5252 18.3883 70.5534 18.9491C70.6317 20.5206 71.1484 21.9427 72.379 21.9362C73.3808 21.9415 73.9091 20.9897 74.1138 19.7927ZM24.1279 21.9362C25.1295 21.9416 25.6584 21.0007 25.8627 19.8031L30.6742 19.801C30.4306 18.6004 30.4017 18.3479 30.3753 17.4147L22.2729 17.4162C22.2396 17.7788 22.2747 18.3883 22.3027 18.9491C22.3806 20.5206 22.8973 21.9427 24.1279 21.9362ZM35.9158 16.2124C35.9158 19.3964 36.4881 21.9594 37.9249 21.9787C39.4006 21.9978 39.934 19.3964 39.934 16.2124C39.934 13.0274 39.3619 10.4663 37.9249 10.446C36.5271 10.4264 35.9158 13.0274 35.9158 16.2124ZM24.0946 10.3327C22.864 10.3262 22.3083 11.8316 22.2304 13.4031C22.2036 13.9362 22.1941 13.9603 22.2304 14.3577H25.8812C25.9175 13.9603 25.9076 13.9362 25.8812 13.4031C25.8029 11.8316 25.3252 10.3262 24.0946 10.3327ZM72.3448 10.449C71.1139 10.4425 70.5969 11.8316 70.5189 13.4031C70.4928 13.9362 70.4829 13.9603 70.5189 14.3577H74.17C74.2063 13.9603 74.1965 13.9362 74.17 13.4031C74.0921 11.8316 73.5751 10.4425 72.3448 10.449ZM50.5273 19.1103C50.5273 20.7118 50.9214 21.9285 52.0443 21.9285C53.2987 21.9285 54.048 20.2279 54.048 16.2299C54.048 11.8403 53.3713 10.3339 52.1919 10.2821C51.0502 10.2322 50.4675 11.2028 50.5273 13.2053V19.1103ZM8.92006 10.8887H10.4678C11.8688 10.8497 12.3576 10.0049 12.3576 7.86198C12.3576 5.91299 11.6734 4.90042 10.4678 4.90042H8.92006V10.8887Z" fill="#20B1EA"></path></svg> </symbol>
+        </defs>
+    </svg>
+    <header class="webt-header">
+        <div class="webt-header__top">
+            <div class="webt-top__wrapper">
+                <a href="#roulette" class="webt-top__menu">
+                    <svg class="ButtonIcon-iVrqPc hVlDJB button-icon icon icon-menu" focusable="false" viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M8 10h16v2H8v-2zm0 5h16v2H8v-2zm0 5h16v2H8v-2z" fill-rule="evenodd"></path></svg>
+                </a>
+                <a href="#roulette" class="webt-top__logo">
+                    <svg class="icon icon-logo webt-logo__img">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-logo"></use>
+                    </svg>
+                </a>
+                <a href="#roulette" class="webt-top__actions"></a>
             </div>
-            <div class="site-branding">
-                <div class="site-logotype">
-                    <a href="#roulette" class="scrollto">
-                        <picture>
-                            <source srcset="images/logooz-1.png" type="image/png">
-                            <img alt="img" loading="lazy" src="images/logooz-1.png" data-key="0"></picture>
-                    </a>
-                </div>
-            </div>
-            <div class="top-menu">
-                <ul id="top-menu" class="menu">
-                    <li id="menu-item-1098"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1098">
-                        <a href="#roulette" class="scrollto">Главная</a>
-                    </li>
-                    <li id="menu-item-1099"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1099">
-                        <a href="#roulette" class="scrollto">Контакты</a>
-                    </li>
-                    <li id="menu-item-1100"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1100">
-                        <a href="#roulette" class="scrollto">Об авторе</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="header-search">
-                <span class="search-icon js-search-icon"></span>
-            </div>
+        </div>
+        <div class="webt-header__bottom">
+            <nav class="webt-bottom__nav">
+                <a href="#roulette" class="webt-nav__link">NEWS</a>
+                <a href="#roulette" class="webt-nav__link">ENTERTAINMENT</a>
+                <a href="#roulette" class="webt-nav__link">ROYALS</a>
+                <a href="#roulette" class="webt-nav__link">LIFESTYLE</a>
+                <a href="#roulette" class="webt-nav__link">STYLEWATCH</a>
+                <a href="#roulette" class="webt-nav__link">SHOPPING</a>
+            </nav>
+            <a href="#roulette" class="webt-bottom__subscribe">SUBSCRIBE</a>
         </div>
     </header>
-    <nav id="site-navigation" class="main-navigation fixed">
-        <div class="main-navigation-inner full">
-            <div class="menu-shapka-container">
-                <ul id="header_menu" class="menu">
-                    <li id="menu-item-1098"
-                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1098 only-hamburger">
-                        <a href="#roulette" class="scrollto">Главная</a>
-                    </li>
-                    <li id="menu-item-1099"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1099 only-hamburger">
-                        <a href="#roulette" class="scrollto">Контакты</a>
-                    </li>
-                    <li id="menu-item-1100"
-                        class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1100 only-hamburger">
-                        <a href="#roulette" class="scrollto">Об авторе</a>
-                    </li>
-                    <li id="menu-item-981"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-981">
-                        <a href="#roulette" class="scrollto">Опросы</a>
-                    </li>
-                    <li id="menu-item-982"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-982">
-                        <a href="#roulette" class="scrollto">Здоровое питание</a>
-                    </li>
-                    <li id="menu-item-983"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-983">
-                        <a href="#roulette" class="scrollto">Женское здоровье</a>
-                    </li>
-                    <li id="menu-item-989"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-989">
-                        <a href="#roulette" class="scrollto">Дети</a>
-                    </li>
-                    <li id="menu-item-984"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-984">
-                        <a href="#roulette" class="scrollto">Диеты</a>
-                    </li>
-                    <li id="menu-item-1016"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1016">
-                        <a href="#roulette" class="scrollto">Психология</a>
-                    </li>
-                    <li id="menu-item-986"
-                        class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-986">
-                        <a href="#roulette" class="scrollto">Уход</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="mobile-menu-placeholder js-mobile-menu-placeholder">
-        <nav id="site-navigation-mobile" class="main-navigation fixed">
-            <div class="main-navigation-inner full">
-                <div class="menu-shapka-container">
-                    <ul id="header_menu" class="menu">
-                        <li id="menu-item-1098"
-                            class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-1098 only-hamburger">
-                            <a href="#roulette" class="scrollto">Главная</a>
-                        </li>
-                        <li id="menu-item-1099"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1099 only-hamburger">
-                            <a href="#roulette" class="scrollto">Контакты</a>
-                        </li>
-                        <li id="menu-item-1100"
-                            class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1100 only-hamburger">
-                            <a href="#roulette" class="scrollto">Об авторе</a>
-                        </li>
-                        <li id="menu-item-981"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-981">
-                            <a href="#roulette" class="scrollto">Опросы</a>
-                        </li>
-                        <li id="menu-item-982"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-982">
-                            <a href="#roulette" class="scrollto">Здоровое питание</a>
-                        </li>
-                        <li id="menu-item-983"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-983">
-                            <a href="#roulette" class="scrollto">Женское здоровье</a>
-                        </li>
-                        <li id="menu-item-989"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-989">
-                            <a href="#roulette" class="scrollto">Дети</a>
-                        </li>
-                        <li id="menu-item-984"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-984">
-                            <a href="#roulette" class="scrollto">Диеты</a>
-                        </li>
-                        <li id="menu-item-1016"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1016">
-                            <a href="#roulette" class="scrollto">Психология</a>
-                        </li>
-                        <li id="menu-item-986"
-                            class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-986">
-                            <a href="#roulette" class="scrollto">Уход</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
+    
     <div id="content" class="site-content fixed main-content-font">
         <div class="site-content-inner">
             <div id="primary" class="content-area">
@@ -211,118 +314,41 @@
                     <article id="post-58"
                              class="article-post post-58 post type-post status-publish format-standard has-post-thumbnail category-zarabotki category-rejtingi">
                         <div class="entry-content" itemprop="articleBody">
-                            <h2 class="entry-title" itemprop="headline">Была беззубой бабкой, а стала молодой
-                                красоткой!
-                                Голливудская улыбка за копейки - это реально!</h2>
-                            <div class="entry-meta">
-									<span class="entry-author" itemprop="author">
-										<span class="entry-label">Автор</span>
-										Фармация и Медицина
-									</span>
-                                <span class="entry-time">
-										<span class="entry-label">На чтение</span>
-										3 мин.
-									</span>
-                                <span class="entry-date">
-										<span class="entry-label">Опубликовано</span>
-										<time itemprop="datePublished" datetime="2021-05-15">
-											<script type="text/javascript">
-												d = new Date();
-                                                p = new Date(d.getTime() - 7 * 86400000);
-                                                monthA = 'января ,февраля,марта,апреля,мая,июня,июля,августа,сентября,октября,ноября,декабря'.split(',');
-                                                document.write(p.getDate() - 0 + ' ' + monthA[p.getMonth()] + ' ' + p.getFullYear());
-											</script>
-										</time>
-									</span>
-                            </div>
+                            <h2 class="entry-title" itemprop="headline">Ήταν σαν γιαγιά χωρίς δόντια και έγινε σαν νεαρή καλλονή! Χαμόγελο του Χόλιγουντ με μια δεκάρα - είναι αλήθεια!</h2>
+                            
 							
 							<picture>
-                                <source srcset="images/11.jpg" type="image/jpg">
-                                <img alt="img" loading="lazy" src="images/11.jpg"
-                                     style="margin: 0 auto 10px; display: block" data-key="3"></picture>
+                  <source srcset="images/11.jpg" type="image/jpg">
+                  <img alt="img" loading="lazy" src="images/11.jpg" style="margin: 0 auto 10px; display: block" data-key="3">
+              </picture>
 									 <br>
 							
 							
-                            <p>Здравствуйте, дорогие читатели моего дневника. Меня зовут Татьяна. Хочу похвастаться своей
-                                новой улыбкой. Мои постоянные подписчики знают, что сын скоро женится и
-                                мы полным ходом готовимся к свадьбе. А во рту у меня чёрти что творится
-                                — стыдно улыбаться и с людьми разговаривать.</p>
-                            <p>Зубы — это первое что в глаза бросается. С плохими зубами на работу
-                                нормальную не устроишься и с мужчиной не познакомишься. А если зубки
-                                белые, ровные, то и выглядишь лет на 20 моложе, по себе знаю.
-                            </p>
-                            <p>Вот и у меня была беда с зубами. </p>
-                            <h2>А теперь посмотрите какая красота! Ну как? Нравится? Вот и мне очень
-                                нравится и самое главное что потратила я сущие копейки на эту красоту!
-                            </h2>
-                            <div class="tgme_widget_message_user">
-                                <a href="#roulette" class="scrollto">
-                                    <i class="tgme_widget_message_user_photo bgcolor1" data-content="Р">
-                                        <picture>
-                                            <source srcset="images/444.png" type="image/png">
-                                            <img alt="img" loading="lazy" src="images/444.png"
-                                                 style="width:100%;max-width: 50px;" data-key="1"></picture>
-                                    </i>
-                                </a>
-                            </div>
-                            <div class="tgme_widget_message_bubble">
-                                <a class="tgme_widget_message_bubble_logo scrollto" href="#roulette"></a>
-                                <i class="tgme_widget_message_bubble_tail">
-                                    <svg class="bubble_icon" width="9px" height="20px" viewbox="0 0 9 20">
-                                        <g fill="none">
-                                            <path class="background" fill="#ffffff"
-                                                  d="M8,1 L9,1 L9,20 L8,20 L8,18 C7.807,15.161 7.124,12.233 5.950,9.218 C5.046,6.893 3.504,4.733 1.325,2.738 L1.325,2.738 C0.917,2.365 0.89,1.732 1.263,1.325 C1.452,1.118 1.72,1 2,1 L8,1 Z"></path>
-                                            <path class="border_1x" fill="#d7e3ec"
-                                                  d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0 L9,0 L9,20 L7,20 L7,20 L7.002,18.068 C6.816,15.333 6.156,12.504 5.018,9.58 C4.172,7.406 2.72,5.371 0.649,3.475 C-0.165,2.729 -0.221,1.464 0.525,0.649 C0.904,0.236 1.439,0 2,0 Z"></path>
-                                            <path class="border_2x"
-                                                  d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.5 L9,0.5 L9,20 L7.5,20 L7.5,20 L7.501,18.034 C7.312,15.247 6.64,12.369 5.484,9.399 C4.609,7.15 3.112,5.052 0.987,3.106 C0.376,2.547 0.334,1.598 0.894,0.987 C1.178,0.677 1.579,0.5 2,0.5 Z"></path>
-                                            <path class="border_3x"
-                                                  d="M9,1 L2,1 C1.72,1 1.452,1.118 1.263,1.325 C0.89,1.732 0.917,2.365 1.325,2.738 C3.504,4.733 5.046,6.893 5.95,9.218 C7.124,12.233 7.807,15.161 8,18 L8,20 L9,20 L9,1 Z M2,0.667 L9,0.667 L9,20 L7.667,20 L7.667,20 L7.668,18.023 C7.477,15.218 6.802,12.324 5.64,9.338 C4.755,7.064 3.243,4.946 1.1,2.983 C0.557,2.486 0.52,1.643 1.017,1.1 C1.269,0.824 1.626,0.667 2,0.667 Z"></path>
-                                        </g>
-                                    </svg>
-                                </i>
-                                <div class="tgme_widget_message_author accent_color">
-                                    <a class="tgme_widget_message_owner_name" style="text-decoration: none;">
-											<span dir="auto">
-												<strong>Фармация и Медицина</strong>
-											</span>
-                                        <i class="verified-icon">✔</i>
-                                    </a>
-                                </div>
-                                <a class="tgme_widget_message_photo_wrap 5312378206302615148 1236884437_456242796">
-                                    <picture>
-                                        <source srcset="images/1.jpg" type="image/jpg">
-                                        <img alt="img" loading="lazy" src="images/1.jpg" data-key="2"></picture>
-                                </a>
-                                <div class="tgme_widget_message_text js-message_text">
-                                    <center>
-                                        <strong>До
-                                            виниров и с винирами Snap-On Smile.</strong>
-                                        Как такое возможно? — спросите вы. А я сейчас вам все расскажу! Но начну
-                                        с начала, как говорится.
-                                    </center>
-                                </div>
-                            </div>
-                            <h2>"Женщина, на ваш рот не менее 200 тысяч нужно!"</h2>
-                            <p>Так мне ответил врач в платной стоматологии. Да и я сама знаю, что
-                                удовольствие это не из дешевых зубы вставлять. Вы же помните, какая в
-                                Советском Союзе стоматология была — выскрябут всё бормашиной, только
-                                стенки одни тонкие остаются, да залепят цементом. И потом зубы
-                                вываливаются через полгода вместе с этой пломбой.</p>
-                            <p>А лечить помните как больно было! Анестезия плохая, боль адская. Легче
-                                было вырвать пойти зубы, чем мучаться.</p>
-                            <p>А сейчас хоть и лечат безболезненно, зато стоит это немеряно. Вот я им с
-                                пенсии 12 500 целых 200 тысяч рублей где возьму? Я ж их не рисую. </p>
-                            <p>Расстроилась я, если честно, когда такую сумму услышала. Сын пришел
-                                вечером ко мне, я расплакалась, говорю, не пойду я на свадьбу, не буду
-                                тебя перед родственниками невесты позорить своим ртом страшным. Он,
-                                конечно, успокаивал, но разве я сама себя в зеркало не вижу — как бабка
-                                старая, беззубая, ей богу. Самой противно на себя смотреть…</p>
-                            <h2>Но я нашла выход! Смешная цена за голливудскую улыбку!</h2>
-                            <p>Сидела я вечером на Одноклассниках, и тут реклама появилась съемных
-                                виниров. Стало интересно, что это такое и как работает. Перешла на сайт,
-                                почитала отзывы, люди хвалили, выставляли свои фотографии до и после и я
-                                в шоке от такой красоты была! Вот, сами смотрите:</p>
+                            <p>Γεια σας αγαπητοί αναγνώστες του ημερολογίου μου. Το όνομά μου είναι Γεωργία. Θέλω να δείξω το νέο μου χαμόγελο. Οι τακτικοί μου ακόλουθοι γνωρίζουν ότι ο γιος μου παντρεύεται σύντομα και ετοιμαζόμαστε για τον γάμο. Και στο στόμα μου γίνεται μεγάλος χαμός  - ντρέπομαι να χαμογελάσω και να μιλήσω στους ανθρώπους.</p>
+                            <p>Τα δόντια είναι το πρώτο πράγμα που τραβάει την προσοχή. Με άσχημα δόντια, δεν θα βρείτε μια κανονική δουλειά και δεν θα γνωρίσετε έναν άντρα. Και αν τα δόντια είναι λευκά, ομοιόμορφα, τότε φαίνεσαι 20 χρόνια νεότερος, το ξέρω από τον εαυτό μου.</p>
+                            <p>Οπότε είχα πρόβλημα με τα δόντια μου.</p>
+                            <h2>Δείτε τώρα τι ομορφιά! Λοιπόν, πώς σας φαίνεται; Σας αρέσει; Μου αρέσει πολύ και το πιο σημαντικό είναι ότι ξόδεψα λίγα χρήματα για αυτή την ομορφιά!</h2>
+                          <picture>
+                            <source srcset="images/1.jpg" type="image/jpg">
+                            <img alt="img" loading="lazy" src="images/1.jpg" data-key="2">
+                          </picture>
+                          <div class="tgme_widget_message_text js-message_text">
+                            <center>
+                              <strong>Πριν από τους καπλαμάδες και με τους καπλαμάδες Snap-On Smile.</strong>
+                              Πώς είναι αυτό δυνατόν; - θα ρωτήσετε. Και τώρα θα σας τα πω όλα! Αλλά θα ξεκινήσω από την αρχή, όπως λένε.
+                            </center>
+                          </div>
+  
+                          <br>
+                          
+                          
+                            <h2>"Κυρία, χρειάζεστε τουλάχιστον 3 χιλιάδες για το στόμα σας!»</h2>
+                            <p>Έτσι μου είπε ένας οδοντίατρος στην ιδιωτική κλινική. Ναι, και εγώ ίδια γνωρίζω ότι δεν είναι φθηνή η διαδικασία τοποθέτησης δοντιών. Θυμάστε πως ήταν η οδοντιατρική παλιά - θα τροχίσουν τα δόντια ώστε να μείνουν μόνο τα λεπτά τοιχώματα και θα τα γεμίσουν με ιατρικό τσιμέντο. Και μετά από έξι μήνες τα δόντια πέφτουν μαζί με αυτό το σφράγισμα.</p>
+                            <p>Και θυμηθείτε πόσο επώδυνη ήταν η διαδικασία! Η αναισθησία είναι κακή, ο πόνος είναι κολασμένος. Ήταν πιο εύκολο να βγάλεις τα δόντια παρά να υποφέρεις.</p>
+                            <p>Και τώρα, αν και η θεραπεία είναι ανώδυνη, αξίζει πολλά χρήματα. Και πως μπορώ να φτιάξω τα δόντια μου με μια σύνταξη 600 έως και 900 ευρώ; Δεν ζωγραφίζω τα λεφτά.</p>
+                            <p>Στενοχωρήθηκα, για να είμαι ειλικρινής, όταν άκουσα ένα τέτοιο ποσό. Ο γιος μου ήρθε σε μένα το βράδυ, ξέσπασα σε κλάματα, λέω, δεν θα πάω στο γάμο, δεν θα σε ατιμάσω μπροστά στους συγγενείς της νύφης με το άσχημο στόμα μου. Φυσικά, με καθησύχασε, αλλά στον καθρέφτη φαίνομαι - σαν μια γριά, χωρίς δόντια, μα τον Θεό. Είναι αηδιαστικό να βλέπω τον εαυτό μου σε αυτό το χάλι...</p>
+                            <h2>Βρήκα όμως τον τρόπο! Γελοία τιμή για ένα χαμόγελο του Χόλιγουντ!</h2>
+                            <p>Καθόμουν στο Facebook το βράδυ και εμφανίστηκε μια διαφήμιση για τους αφαιρούμενους καπλαμάδες. Μου κίνησε το ενδιαφέρον, τι είναι και πώς λειτουργεί. Πήγα στο site, διάβασα τις κριτικές των ανθρώπων, σχεδόν όλες θετικές, κοίταξα τις φωτογραφίες τους πριν και μετά, και συγκλονίστηκα με τέτοια ομορφιά! Εδώ, δείτε μόνοι σας:</p>
                             <picture>
                                 <source srcset="images/6.jpg" type="image/jpg">
                                 <img alt="img" loading="lazy" src="images/6.jpg"
@@ -350,63 +376,34 @@
 									<br>									 
 									 
 							<h3 style="color: red;text-align: center">
-                                <b>И такую улыбку может получить
-                                    каждый буквально за пять минут с помощью съемных виниров. </b>
+                                <b>Και όλοι μπορούν να αποκτήσουν ένα τέτοιο χαμόγελο σε μόλις πέντε λεπτά με τη βοήθεια των αφαιρούμενων καπλαμάδων.</b>
                             </h3>
                             <p>
-                                <b>Внимание! Многие нарываются на подделки, поэтому не заказывайте виниры
-                                    на непроверенных сайтах!</b>
+                                <b>Προσοχή! Πολλοί πετυχαίνουν ψεύτικα, απομιμήσεις, γι' αυτό μην παραγγείλετε καπλαμάδες σε μη επαληθευμένους ιστότοπους!</b>
                             </p>
                             <p>
-                                <b>
-                                    Я заказывала оригинальные съемные виниры 
-									<a class="link scrollto" href="#roulette">Snap-On Smile</a>. 
-									Выглядят они вот так,
-                                    запоминайте:
-                                </b>
+                                <b>Παρήγγειλα γνήσιους καπλαμάδες <a class="link scrollto" href="#roulette">Snap-On Smile</a>. Μοιάζουν με αυτό, να θυμάστε:</b>
                             </p>
                             <picture>
                                 <source srcset="images/prod.png" type="image/png">
                                 <img alt="img" loading="lazy" src="images/prod.png"
                                      style="margin: 0 auto; display: block;max-width: 600px;margin-bottom: 20px;"
                                      data-key="5"></picture>
-                            <h2>Как пользоваться съемными винирами</h2>
-                            <p>Пользоваться ими очень легко. Есть инструкция:</p>
-                            <p style="margin-bottom: 0">1. Вложить гель в виниры.</p>
-                            <p style="margin-bottom: 0">2. Поместить виниры с гелем в горячую воду на 2
-                                минуты.</p>
-                            <p style="margin-bottom: 0">3. Достать виниры из воды и плотно прижать к
-                                зубам.</p>
-                            <p style="margin-bottom: 0">4. На ночь виниры снять и поместить в контейнер
-                                для обеззараживания.</p>
+                            <h2>Πώς να χρησιμοποιήσετε τους αφαιρούμενους καπλαμάδες</h2>
+                            <p>Είναι πολύ εύχρηστα. Υπάρχει μια οδηγία χρήσης:</p>
+                            <p style="margin-bottom: 0">1. Τοποθετήστε το τζελ στους καπλαμάδες.</p>
+                            <p style="margin-bottom: 0">2. Τοποθετήστε τους καπλαμάδες με gel σε ζεστό νερό για 2 λεπτά.</p>
+                            <p style="margin-bottom: 0">3. Βγάλτε τους καπλαμάδες από το νερό και πιέστε σταθερά πάνω στα δόντια.</p>
+                            <p style="margin-bottom: 0">4. Το βράδυ, αφαιρέστε τους καπλαμάδες και τοποθετήστε τους σε δοχείο για απολύμανση.</p>
                             <img alt="img" loading="lazy" src="images/rot.gif" width="640" style="margin: 30px auto; display: block"
                                  data-key="6">
-                            <p>Все очень просто! Крепятся надежно как на цемент! Не выпадут, даже не
-                                беспокойтесь. Материал прочный, повредить его сложно. </p>
-                            <p>Разговаривать и есть виниры не мешают. Голос тоже не изменился, не
-                                шепелявлю, разговариваю хорошо.
-                            </p>
-                            <h2>Где купить и сколько стоят</h2>
-                            <p>
-                                Вы будете смеяться, но они мне достались бесплатно
-                                <span class="price__new">
-										<span class="new_price_val"></span>
-										<span class="new_price_sig"></span>
-									</span>
-                                . Покупайте только через
-                                <a class="link scrollto" href="#roulette">официальный розыгрыш виниров!</a>
-                                Не попадитесь на
-                                подделку, сейчас много мошенников развелось в интернете. Вот вам ссылка
-                                на официальный розыгрыш <a class="link scrollto" href="#roulette">виниров Snap-On Smile</a>
-                                через который сама заказывала.
-                            </p>
-                            <p>Просто введите свое имя и телефон, оператор сам перезвонит и оформит
-                                заказ. Сама боялась по интернету заказывать, а оказалось ничего сложного
-                                — операторы вежливые и все объясняют. </p>
-                            <p>Теперь мне не стыдно на свадьбу к сыну идти. Буду улыбаться своей
-                                голливудской улыбкой и с родственниками снохи знакомиться без стыда.
-                            </p>
-                            <p>Спасибо за внимание, ваша Татьяна!</p>
+                            <p>Όλα είναι πολύ απλά! Στερεώνονται σαν τσιμέντο! Δεν θα πέσουν, μην ανησυχείτε. Το υλικό είναι ανθεκτικό και δύσκολο να καταστραφεί.</p>
+                            <p>Οι καπλαμάδες δεν επηρεάζουν κατά την ομιλία και στο φαγητό. Ούτε η φωνή μου έχει αλλάξει, δεν ψελλίζω, μιλάω καλά.</p>
+                            <h2>Πού να τους αγοράσετε και πόσο κοστίζουν</h2>
+                          <p>Θα γελάσετε, αλλά τους πήρα σχεδόν δωρεάν. Αγοράστε τους καπλαμάδες μόνο μέσω της <a class="link scrollto" href="#roulette">επίσημης φόρμας παραγγελίας</a>! Μην πέφτετε σε ψεύτικα, τώρα υπάρχουν πολλοί απατεώνες στο Διαδίκτυο. Εδώ είναι ένας σύνδεσμος για την επίσημη φόρμα παραγγελίας για τους <a class="link scrollto" href="#roulette">καπλαμάδες Snap-On Smile</a> μέσω της οποίας τους παρήγγειλα εγώ.</p>
+                            <p>Απλώς πληκτρολογήστε το όνομα και τον αριθμό του τηλεφώνου σας, ο εκπρόσωπος θα σας καλέσει και θα κάνει την παραγγελία. Εγώ φοβόμουν να παραγγείλω στο Διαδίκτυο, αλλά αποδείχθηκε ότι δεν ήταν τίποτα περίπλοκο - οι εκπρόσωποι είναι ευγενικοί και εξηγούν τα πάντα.</p>
+                            <p>Τώρα δεν ντρέπομαι να πάω στο γάμο του γιου μου. Θα χαμογελάσω με το χαμόγελό μου, σαν σταρ του Χόλιγουντ, και θα γνωρίσω τους συγγενείς της νύφης μου χωρίς ντροπή.</p>
+                            <p>Σας ευχαριστώ για την προσοχή σας! Με εκτίμηση, Γεωργία.</p>
                             <style type="text/css">
 
                             </style>
@@ -415,23 +412,24 @@
 								line-height: 1.2;
 								font-weight: bold;
 								text-transform: uppercase;font-size: 18px;">
-                                Cпециально для наших читателей мы размещаем официальный розыгрыш Snap-On Smile.<br>
-                                Остатки скидок будут выдаваться для всех желающих до
+                              ΕΙΔΙΚΑ ΓΙΑ ΤΟΥΣ ΑΝΑΓΝΩΣΤΕΣ ΜΑΣ, ΑΝΑΡΤΗΣΟΥΜΕ ΤΗΝ ΕΠΙΣΗΜΗ ΦΟΡΜΑ ΠΑΡΑΓΓΕΛΙΑΣ SNAP-ON SMILE.<br>
+                              ΟΛΟΙ ΜΠΟΡΟΥΝ ΝΑ ΠΑΡΑΓΓΕΙΛΟΥΝ ΤΟΥΣ ΚΑΠΛΑΜΑΔΕΣ SNAP-ON SMILE ΜΕ ΕΚΠΤΩΣΗ 50% ΕΩΣ ΚΑΙ ΤΙΣ
                                 <script type="text/javascript">
                                     d = new Date();
                                     p = new Date(d.getTime() - 0 * 86400000);
-                                    monthA = 'Января,Февраля,Марта,Апреля,Мая,Июня,Июля,Августа,Сентября,Октября,Ноября,Декабря'.split(',');
+                                    monthA = 'Ιανουαρίου,Φεβρουαρίου,Μαρτίου,ΑΠΡΙΛΙΟΥ,Μαΐου,Ιουνίου,Ιουλίου,Αυγούστου,Σεπτεμβρίου,Οκτωβρίου,Νοεμβρίου,Δεκεμβρίου'.split(',');
                                     document.write(p.getDate() + ' ' + monthA[p.getMonth()]);
                                 </script>
-                                включительно!
+                                !
                             </h3>
+                            <div id="roulette"></div>
                             <center>
                                 <div class="order_block" style="display: block;">
 									<br>
                                     <div><img src="images/prod.png"></div>
 									<br>
-                                    <h3>Все что Вам нужно — это ввести имя и номер телефона.<br>Поторопитесь! У Вас
-                                        осталось времени:<br><span class="time_remains" id="min">30</span> : <span
+                                    <h3>Το μόνο που χρειάζεται είναι να εισάγετε το όνομα και τον αριθμό του τηλεφώνου σας.<br>
+                                      Βιαστείτε! Ο χρόνος που απομένει είναι:<br><span class="time_remains" id="min">30</span> : <span
                                                 class="time_remains" id="sec">00</span></h3>
                                     <style>
                                         p.price:before {
@@ -452,13 +450,13 @@
 									
                                     <div class="input-group tooltip-hide">
 									<input type="text" class="input-roulette" name="name" id="input-name"
-                                     placeholder="Введите ваше имя" required></div>
+                                     placeholder="Εισάγετε το όνομά σας" required></div>
 									 
                                     <div class="input-group tooltip-hide"><input type="tel" class="input-roulette" 
 									name="phone" id="input-phone"
-                                     placeholder="Телефон (мобильный активный)" required></div>
+                                     placeholder="Τηλέφωνο (ενεργό κινητό)" required></div>
 									 
-                                        <input type="submit" class="submit-roulette" value="Отправить">
+                                        <input type="submit" class="submit-roulette" value="ΠΑΡΑΓΓΕΙΛΕΤΕ">
 
                                     </form>
 
@@ -472,12 +470,12 @@
                             <br>
                             <div class="thumbs-rating-container" id="thumbs-rating-58" data-content-id="58">
                                 <button class="thumbs-rating-up thumbs-rating-voted"
-                                        onclick="thumbs_rating_vote(58, 1);">Нравится +476
+                                        onclick="thumbs_rating_vote(58, 1);">Μου αρέσει +476
                                 </button>
                                 <button class="thumbs-rating-down thumbs-rating-voted"
-                                        onclick="thumbs_rating_vote(58, 2);">Не нравится -4
+                                        onclick="thumbs_rating_vote(58, 2);">Δεν μου αρέσει -4
                                 </button>
-                                <span class="thumbs-rating-already-voted">Вы уже голосовали</span>
+                                <span class="thumbs-rating-already-voted">You already voted!</span>
                             </div>
                             <div class="b-r b-r--after_content">
                                 <div id="yandex_rtb_R-A-504134-1">
@@ -515,12 +513,9 @@
  border-radius: 50%;" data-key="7"></picture>
                                 <div class="comments__text">
 										<span>
-											<strong>Галина П.</strong>
+											<strong>Άννα Π.</strong>
 										</span>
-                                    <p>Давно как то заказала тоже виниры, привезли китайское га..но. 
-									А эти <a class="link scrollto" href="#roulette">Snap-On Smile</a> достойные, 
-									оригинальные, хорошо держатся, как влитые, нет вкуса постороннего. Одевать легко.
-									</p>
+                                    <p>Πριν πολύ καιρό είχα παραγγείλει και γω καπλαμάδες, κινέζικη απομίμηση. Ενώ αυτά τα Snap-On Smile είναι άξια, πρωτότυπα, κρατάνε γερά, ταιριάζουν σαν γάντι, δεν υπάρχει η περίεργη γεύση. Η εφαρμογή είναι εύκολη.</p>
                                 </div>
                             </div>
                             <div class="comments__item">
@@ -533,14 +528,9 @@
  border-radius: 50%;" data-key="7"></picture>
                                 <div class="comments__text">
 										<span>
-											<strong>Алла Георгиевна</strong>
+											<strong>Φωτεινή Δ.</strong>
 										</span>
-                                    <p>Действительно! Красивая улыбка очень преображает людей. 
-									Сама переживаю, что плохие зубы, 
-									а денег нет, чтобы сделать. Совсем не думают о людях, дерут три шкуры 
-									с простых людей эти стоматологи. Хорошо хоть такое придумали, пусть и съемные, 
-									зато как сразу преображают! Красота!
-									</p>
+                                    <p>Πραγματικά! Ένα όμορφο χαμόγελο μεταμορφώνει τελείως τους ανθρώπους. Εγώ ανησυχώ ότι έχω άσχημα δόντια, αλλά δεν έχω χρήματα να τα φτιάξω. Δεν σκέφτονται καθόλου τους ανθρώπους, αυτοί οι οδοντίατροι σκίζουν τρία δέρματα από απλούς ανθρώπους, για να βγάλουν κέρδος. Λοιπόν, τουλάχιστον βρήκαν αυτό, αν και αφαιρούμενοι, αλλά πώς σε μεταμορφώνουν αμέσως! Ομορφιά!</p>
 									<picture>
                                         <source srcset="images/kom1.jpg" type="image/jpg">
                                         <img alt="img" loading="lazy" src="images/kom1.jpg" width="435" height="420"
@@ -561,10 +551,9 @@
  border-radius: 50%;" data-key="7"></picture>
                                 <div class="comments__text">
 										<span>
-											<strong>Раиса</strong>
+											<strong>Ρούλα Θ.</strong>
 										</span>
-                                    <p>И я заказала, ношу, все думают что разбогатела и зубы сделала.
-									</p>
+                                    <p>Και γω παρήγγειλα, τους φοράω, όλοι νομίζουν ότι πλούτισα και έφτιαξα τα δόντια μου.</p>
                                 </div>
                             </div>
 							
@@ -578,11 +567,9 @@
  border-radius: 50%;" data-key="7"></picture>
                                 <div class="comments__text">
 										<span>
-											<strong>Валентина М.</strong>
+											<strong>Βαλεντίνα Μ.</strong>
 										</span>
-                                    <p>Это то что нужно, если на выход куда-то выйти. Каждый день не ношу, 
-									одеваю их по случаю только.
-									</p>
+                                    <p>Αυτό χρειάζεσαι αν βγεις κάπου. Δεν τους φοράω κάθε μέρα, φοράω τους καπλαμάδες μόνο για ειδικές περιστάσεις.</p>
                                 </div>
                             </div>
 							
@@ -596,11 +583,9 @@
  border-radius: 50%;" data-key="7"></picture>
                                 <div class="comments__text">
 										<span>
-											<strong>Лариса Морозова</strong>
+											<strong>Μαρία Γ.</strong>
 										</span>
-                                    <p>А я каждый день ношу, уже не представляю себя без виниров.
-
-									</p>
+                                    <p>Εγώ τους φοράω κάθε μέρα, δεν μπορώ πια να φανταστώ τον εαυτό μου χωρίς αυτούς τους καπλαμάδες.</p>
                                 </div>
                             </div>
 							
@@ -614,12 +599,9 @@
  border-radius: 50%;" data-key="7"></picture>
                                 <div class="comments__text">
 										<span>
-											<strong>Александр</strong>
+											<strong>Αλέξανδρος</strong>
 										</span>
-                                    <p>Я вот ходил, хотел вставные делать, так они за 
-									один мост 50 тыс с лишним запросили. Послал я их, так и хожу без зубов, 
-									я мужик, мне можно, а вот женщина беззубая — это кошмар конечно.
-									</p>
+                                    <p>Πήγα στον οδοντίατρο, ήθελα να φτιάξω τα δόντια μου, μου ζήτησαν πάνω από 3 χιλιάδες για μια γέφυρα. Τους έστειλα στο καλό, μπορώ και χωρίς δόντια, άντρας είμαι, αλλά μια γυναίκα χωρίς δόντια είναι φυσικά εφιάλτης.</p>
                                 </div>
                             </div>
 							
@@ -633,12 +615,9 @@
  border-radius: 50%;" data-key="7"></picture>
                                 <div class="comments__text">
 										<span>
-											<strong>Ирина</strong>
+											<strong>Ειρήνη</strong>
 										</span>
-                                    <p>А я знаю про <a class="link scrollto" href="#roulette">Snap-On Smile</a> 
-									и даже пользуюсь уже год) Мне внук с Израиля привез. Отличные виниры, 
-									живу и радуюсь, что не нужно беспокоиться о дорогих протезах и походах к зубным.
-									</p>
+                                    <p>Και γω ξέρω για τους αφαιρούμενους καπλαμάδες Snap-On Smile και τους χρησιμοποιώ ήδη εδώ και ένα χρόνο) Ο εγγονός μου τους έφερε από το Ισραήλ. Εξαιρετικοί καπλαμάδες, ζω και χαίρομαι που δεν χρειάζεται να ανησυχώ για ακριβές οδοντοστοιχίες και επισκέψεις στον οδοντίατρο.</p>
 									<picture>
                                         <source srcset="images/kom2.jpg" type="image/jpg">
                                         <img alt="img" loading="lazy" src="images/kom2.jpg" width="435" height="420"
@@ -656,11 +635,9 @@
  border-radius: 50%;" data-key="7"></picture>
                                 <div class="comments__text">
 										<span>
-											<strong>Зоя Иванова</strong>
+											<strong>Ζωή Ι.</strong>
 										</span>
-                                    <p>Слезы накатываются, ведь я тоже через это все прохожу, я прямо сейчас виниры себе 
-									заказала. Я такая отсталая, только сейчас про них узнала. Буду молиться за ваше здоровье, Татьяна!
-									</p>
+                                    <p>Κλαίω, γιατί κι εγώ τα περνάω όλα αυτά, παρήγγειλα τους αφαιρούμενους καπλαμάδες για μένα αυτή τη στιγμή. Είμαι τόσο καθυστερημένη, μόλις έμαθα για την ύπαρξή τους. Θα προσευχηθώ για την υγεία σου, Γεωργία!</p>
                                 </div>
                             </div>
 							
@@ -674,11 +651,9 @@
  border-radius: 50%;" data-key="7"></picture>
                                 <div class="comments__text">
 										<span>
-											<strong>Алексей Г.</strong>
+											<strong>Ανδρέας Σ.</strong>
 										</span>
-                                    <p>Мы с женой пол года уже носим эти виниры, дети подарили. Я еще ни разу минуса не нашел. 
-									Даже забываю о том, что они у меня во рту. Все потому что они для людей созданы.
-									</p>
+                                    <p>Τους αφαιρούμενους καπλαμάδες χρησιμοποιούμε εγώ και η γυναίκα μου εδώ και μισό χρόνο, ήταν δώρο από τα παιδιά μας. Δεν έχω βρει ακόμα κάποιο μειονέκτημα. Ξεχνώ μάλιστα ότι είναι στο στόμα μου. Όλα επειδή είναι δημιουργημένα για τους ανθρώπους.</p>
                                 </div>
                             </div>
 							
@@ -692,11 +667,9 @@
  border-radius: 50%;" data-key="7"></picture>
                                 <div class="comments__text">
 										<span>
-											<strong>Виктория</strong>
+											<strong>Βιβή</strong>
 										</span>
-                                    <p>У меня знакомая носит такие, я сначала подумала, что она у стоматолога 
-									полностью зубы заменила, но нет — всего лишь накладные виниры. Вот, понимаю, эффект!
-									</p>
+                                    <p>Η φίλη μου φοράει αυτούς τους καπλαμάδες, στην αρχή νόμιζα ότι είχε αντικαταστήσει εντελώς τα δόντια της στον οδοντίατρο, αλλά όχι - είναι Snap-On Smile. Εδώ, καταλαβαίνω, το αποτέλεσμα!</p>
                                 </div>
                             </div>
 							
@@ -710,10 +683,9 @@
  border-radius: 50%;" data-key="7"></picture>
                                 <div class="comments__text">
 										<span>
-											<strong>Людмила Автухова</strong>
+											<strong>Λυδία Α.</strong>
 										</span>
-                                    <p>А где их можно заказать? В аптеках и стоматологиях об этом в первый раз слышат…
-									</p>
+                                    <p>Πού μπορώ να τους παραγγείλω; Στα φαρμακεία και στην οδοντιατρική, το ακούν για πρώτη φορά...</p>
                                 </div>
                             </div>
 							
@@ -727,13 +699,9 @@
  border-radius: 50%;" data-key="7"></picture>
                                 <div class="comments__text">
 										<span>
-											<strong>Валентина</strong>
+											<strong>Βασιλική</strong>
 										</span>
-                                    <p>Так на официальном сайте же все есть. Но я в интернет-магазины эти не лезу.
-									Просто номер телефона здесь свой оставила, мне позвонили девочки приятные
-									все сами оформили и отправили, не пришлось мучаться.
-
-									</p>
+                                    <p>Είναι όλα στον επίσημο ιστότοπο. Αλλά δεν χρησιμοποιώ αυτά τα ηλεκτρονικά καταστήματα. Μόλις άφησα τον αριθμό του τηλεφώνου μου, με πήραν τηλέφωνο τα ωραία κορίτσια, τα κανόνισαν όλα και μου έστειλαν τους καπλαμάδες, δεν κουράστηκα καθόλου.</p>
                                 </div>
                             </div>
 							
@@ -747,11 +715,9 @@
  border-radius: 50%;" data-key="7"></picture>
                                 <div class="comments__text">
 										<span>
-											<strong>Людмила Автухова</strong>
+											<strong>Λυδία Α.</strong>
 										</span>
-                                    <p>Уже позвонили! Спасибо, Валентина)
-
-									</p>
+                                    <p>Με κάλεσαν ήδη! Ευχαριστώ, Βασιλική)</p>
                                 </div>
                             </div>
 							
@@ -765,11 +731,9 @@
  border-radius: 50%;" data-key="7"></picture>
                                 <div class="comments__text">
 										<span>
-											<strong>Николай Кальмук</strong>
+											<strong>Νικόλαος Κ.</strong>
 										</span>
-                                    <p>Я в свои 50 уже с уродливыми зубами, жены давно нет, а кто на такого поглядит вообще? 
-									Мое спасение просто эти ваши виниры. Пойду познакомлюсь теперь с кем-нибудь.
-									</p>
+                                    <p>Στα 50 μου, έχω ήδη άσχημα δόντια, η γυναίκα μου έχει φύγει προ πολλού, και ποια θα με κοιτάξει; Η σωτηρία μου είναι μόνο αυτοί οι καπλαμάδες. Πάω να γνωρίσω κάποια τώρα.</p>
 									<picture>
                                         <source srcset="images/kom3.jpg" type="image/jpg">
                                         <img alt="img" loading="lazy" src="images/kom3.jpg" width="435" height="420"
@@ -790,11 +754,9 @@
  border-radius: 50%;" data-key="7"></picture>
                                 <div class="comments__text">
 										<span>
-											<strong>Екатерина</strong>
+											<strong>Κατερίνα</strong>
 										</span>
-                                    <p><a class="link scrollto" href="#roulette">Snap-On Smile</a> — это известная американская фирма. 
-									Это качественные виниры, и у них часто акции бывают. А другие фирмы подделки.
-									</p>
+                                    <p>Η Snap-On Smile είναι μια πολύ γνωστή αμερικανική εταιρεία. Πρόκειται για τους καπλαμάδες υψηλής ποιότητας και συχνά έχουν προσφορές. Άλλες εταιρείες είναι ψεύτικες.</p>
                                 </div>
                             </div>
 							
@@ -808,23 +770,17 @@
  border-radius: 50%;" data-key="7"></picture>
                                 <div class="comments__text">
 										<span>
-											<strong>Мария</strong>
+											<strong>Μαρία</strong>
 										</span>
-                                    <p>Послушала ваш совет, и тоже заказала себе эти съемные виниры. 
-									Ношу неделю, и уже заметила разницу. Я стала более уверенной в себе, 
-									в своей привлекательности. Раньше бы никогда не полезла за колбасой без очереди, 
-									а вчера улыбнулась мужчине и он меня пропустил любезно. 
-									А на днях сосед сумки с продуктами на 5 этаж мне поднял. Вот так-то!
-									</p>
+                                    <p>Άκουσα τη συμβουλή σας και παρήγγειλα επίσης αυτούς τους αφαιρούμενους καπλαμάδες για μένα. Τους φοράω εδώ και μια εβδομάδα και ήδη βλέπω διαφορά. Έγινα πιο σίγουρη για τον εαυτό μου, για την ελκυστικότητά μου. Πριν, δεν θα είχα ρισκάρει ποτέ να χωθώ κάπου, χωρίς να περιμένω στην ουρά την σειρά μου, αλλά χθες χαμογέλασα σε έναν άντρα και με άφησε ευγενικά να περάσω. Και την άλλη μέρα, ένας γείτονας με βοήθησε να ανεβάσω τα ψώνια μου στον 5ο όροφο. Ωραία!</p>
                                 </div>
                             </div>
 							
                             <footer>
-                                <center><a href="#roulette" style="color: red; font-size: 2em">Участвовать в розыгрыше</a></center>
+                                <center><a href="#roulette" style="color: red; font-size: 2em">Πάρτε μέρος στην κλήρωση</a></center>
                                 <center style="padding-top: 40px;">
                                     <a style="text-decoration: none; color: inherit;" href="privacy.html"
-                                       target="_blank">Политика
-                                        Конфиденциальности</a>
+                                       target="_blank">Privacy Policy</a>
                                 </center>
                             </footer>
                             <style type="text/css">
